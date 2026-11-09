@@ -6,10 +6,10 @@ val allScala  = Seq("2.13.5", mainScala)
 val akkaVersion           = "2.6.13"
 val catsEffectVersion     = "2.3.3"
 val circeVersion          = "0.13.0"
-val http4sVersion         = "0.21.20"
+val http4sVersion         = "0.21.34"
 val magnoliaVersion       = "0.17.0"
 val mercatorVersion       = "0.2.1"
-val playVersion           = "2.8.7"
+val playVersion           = "2.8.22"
 val playJsonVersion       = "2.9.2"
 val silencerVersion       = "1.7.3"
 val sttpVersion           = "3.1.7"
@@ -231,7 +231,7 @@ lazy val akkaHttp = project
   .settings(commonSettings)
   .settings(
     libraryDependencies ++= Seq(
-      "com.typesafe.akka" %% "akka-http"                  % "10.2.4",
+      "com.typesafe.akka" %% "akka-http"                  % "10.2.10",
       "com.typesafe.akka" %% "akka-serialization-jackson" % akkaVersion,
       "com.typesafe.akka" %% "akka-stream"                % akkaVersion,
       "de.heikoseeberger" %% "akka-http-circe"            % "1.35.3" % Optional,
